@@ -7,7 +7,7 @@ import librosa
 import random
 import shutil
 
-DATASET_LENGTH = 1
+DATASET_LENGTH = 4
 DURATION = DATASET_LENGTH * 3600
 
 

@@ -1,7 +1,25 @@
-# Training and adaptation os slected model using CoquiTTS system
+# Training and adaptation of slected model using CoquiTTS system
 This document and attached files, datasets, etc. were created as a part of a Bachelor's Thesis of Roman Machala - Comparison and analaysis of speech synthesizers.
 
+**The training was done through GoogleColab; hence it is recommended and training scripts are designed to be ran through GoogleColab**
+
 In this section the CoquiTTS systems is utilized for both training and adaptation of already existing synthesizer.
+
+## Getting data
+The data can be get by downloading the dataset at https://www.openslr.org/109/ and running:
+```
+    wget https://www.openslr.org/resources/109/hi_fi_tts_v0.tar.gz
+
+    tar -ztvf downloaded_dataset.tar.gz
+
+    python get_audios.py
+```
+
+Several directories are made with training dataset and evalaution dataset used in this experiment. 
+**All audios are picked randomly!**
+
+Make sure to check the directories name are matching names in used scripts.
+
 ## Model selection
 The selected model is VITS. The VITS model is a end-to-end model capable of synthesizing natural and intelligible speech directly from text input. Originally the VITS model was trained on LJSpeech dataset for a single speaker or a multi-speaker version was trained on a VCTK corpus, both available at: https://github.com/coqui-ai/TTS/blob/dev/TTS/.models.json.
 
@@ -58,13 +76,3 @@ All scripts used to adapt the VITS model are attached with this file, as well as
 For further details please reade the CoquiTTS documentation, available at: https://docs.coqui.ai/en/latest/, where all parameters are explained in details.
 
 
-### Getting data
-The data can be get by downloading the mentioned dataset and running:
-```
-    python get_audios.py
-```
-
-Several directories are made with training dataset and evalaution dataset used in this experiment. 
-**All audios are picked randomly!**
-
-Make sure to rename the dataset directories and match them with used variables in scripts.
