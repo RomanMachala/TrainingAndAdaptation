@@ -1,3 +1,9 @@
+"""
+    Thiis script produces datasets used to evaluate and train a selected model - VITS
+"""
+
+__author__  = "Roman Machala"
+
 from modules.get_eval_audios import get_eval_audios
 from modules.get_train_audios import get_train_dataset
 from modules.resample import resample_audios

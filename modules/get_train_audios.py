@@ -2,6 +2,8 @@
     This script ranodmly selects audio samples up to DURATION in hours
 """
 
+__author__  = "Roman Machala"
+
 import os
 import librosa
 import random

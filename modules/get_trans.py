@@ -1,10 +1,12 @@
 """
     Thuis script gets audio transcriptions for selected speaker
 """
+
+__author__  = "Roman Machala"
+
 import json
 import os
 import csv
-
 
 def get_trans(trans_path: str, dataset_path: str, meta_file: str):
     """

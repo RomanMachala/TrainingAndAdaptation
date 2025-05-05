@@ -1,3 +1,9 @@
+"""
+    This script contains logic to split the selected dataset into smaller subsets.
+"""
+
+__author__  = "Roman Machala"
+
 import csv
 import librosa
 import os

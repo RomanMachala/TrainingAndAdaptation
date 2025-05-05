@@ -1,3 +1,9 @@
+"""
+    This script contains logic to produce the evlauation dataset.
+"""
+
+__author__  = "Roman Machala"
+
 import os
 import csv
 import shutil

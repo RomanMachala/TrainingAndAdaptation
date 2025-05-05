@@ -2,6 +2,8 @@
     This script ranodmly selects 100 samples for a selected speaker as evaluation samples
 """
 
+__author__  = "Roman Machala"
+
 import os
 import librosa
 import random

@@ -2,6 +2,8 @@
     This script converts audio files in flac format to wav format and resamples them
 """
 
+__author__  = "Roman Machala"
+
 import librosa
 import os
 import soundfile
